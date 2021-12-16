@@ -17,7 +17,7 @@
     ],
     "require": {
         "php": ">=8.1",
-        "dark-prospect-games/obsidian-moon-engine": "dev-master"
+        "dark-prospect-games/obsidian-moon-engine": "dev-develop"
     },
     "require-dev": {
         "roave/security-advisories": "dev-latest"
