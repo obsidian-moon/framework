@@ -8,7 +8,7 @@
  * PHP version 7
  *
  * @category  ObsidianMoonEngine
- * @package   DarkProspectGames\ObsidianMoonEngine
+ * @package   ObsidianMoonDevelopment\ObsidianMoonEngine
  * @author    Alfonso E Martinez, III <admin@darkprospect.net>
  * @copyright 2011-2018 Dark Prospect Games, LLC
  * @license   MIT https://darkprospect.net/MIT-License.txt
@@ -16,13 +16,13 @@
  */
 namespace App\Modules;
 
-use DarkProspectGames\ObsidianMoonEngine\AbstractModule;
+use ObsidianMoonDevelopment\ObsidianMoonEngine\AbstractModule;
 
 /**
  * Class ExampleModule
  *
  * @category ObsidianMoonEngine
- * @package  DarkProspectGames\ExampleApp\Modules
+ * @package  ObsidianMoonDevelopment\ExampleApp\Modules
  * @author   Alfonso E Martinez, III <admin@darkprospect.net>
  * @license  MIT https://darkprospect.net/MIT-License.txt
  * @link     https://github.com/dark-prospect-games/obsidian-moon-engine/

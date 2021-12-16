@@ -1,6 +1,6 @@
 <?php
 /**
- * We caused a log to happen on purpose to show you how it works.
+ * Index page content
  *
  * Obsidian Moon Engine by Dark Prospect Games
  * An Open Source, Lightweight and 100% Modular Framework in PHP
@@ -14,12 +14,14 @@
  * @license   MIT https://darkprospect.net/MIT-License.txt
  * @link      https://github.com/dark-prospect-games/obsidian-moon-engine/
  */
-use ObsidianMoonDevelopment\ObsidianMoonEngine\Modules\CoreException;
-
-try {
-    $content = 'We have added a log to `logs/errors.log`!';
-    $logger->info('Logger loaded. We successfully saved an info log.');
-    $core->view('layout/layout', compact('content'));
-} catch (CoreException $e) {
-    echo 'An error occurred! Please try refreshing the page.';
-}
+?>
+<p>
+    This is an Example App for Obsidian Moon Engine, below you will see content from
+    a module.
+</p>
+<p>
+    We received a message from ObsidianMoonDevelopment\ExampleApp\Modules\ExampleModule:
+    &quot;<?php echo $greeting; ?>&quot;
+</p>
+<p>Click <a href="/missing">here</a> to see a missing page.</p>
+<p>Click <a href="/logerror">here</a> to see saving of logs.</p>
