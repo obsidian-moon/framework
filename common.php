@@ -10,15 +10,8 @@
  *
  * PHP version 7
  *
- * @category  ObsidianMoonEngine
+ * @category  Framework
  * @package   DarkProspectGames\ObsidianMoonEngine
- * @author    Alfonso E Martinez, III <admin@darkprospect.net>
- * @copyright 2011-2018 Dark Prospect Games, LLC
- * @license   MIT https://darkprospect.net/MIT-License.txt
- * @link      https://github.com/dark-prospect-games/obsidian-moon-engine/
- *
- * @global Core   $core
- * @global Logger $logger
  */
 require __DIR__ . '/config/environment.php';
 session_start();
@@ -26,8 +19,11 @@ require dirname(__DIR__) . '/vendor/autoload.php';
 
 use \DarkProspectGames\ObsidianMoonEngine\Core;
 use \DarkProspectGames\ObsidianMoonEngine\Modules\Input as CoreInput;
-use \Monolog\Handler\StreamHandler;
-use \Monolog\Logger;
+use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\Routing\Exception\ResourceNotFoundException;
+use Symfony\Component\Routing\Matcher\UrlMatcher;
+use Symfony\Component\Routing\RequestContext;
 
 try {
     $core = new Core(

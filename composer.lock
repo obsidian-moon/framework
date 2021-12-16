@@ -4,19 +4,19 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d679e5881603a906b1940eb6c801c4d7",
+    "content-hash": "1a0ee559b6a953d7d6734cf075f74c55",
     "packages": [
         {
             "name": "dark-prospect-games/obsidian-moon-engine",
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/obsidian-moon-development/obsidian-moon-engine.git",
+                "url": "https://github.com/obsidian-moon/engine.git",
                 "reference": "83b82990bdea79960a93b52f963cc81b6fa009ba"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/obsidian-moon-development/obsidian-moon-engine/zipball/83b82990bdea79960a93b52f963cc81b6fa009ba",
+                "url": "https://api.github.com/repos/obsidian-moon/engine/zipball/83b82990bdea79960a93b52f963cc81b6fa009ba",
                 "reference": "83b82990bdea79960a93b52f963cc81b6fa009ba",
                 "shasum": ""
             },
@@ -58,16 +58,16 @@
     "packages-dev": [
         {
             "name": "roave/security-advisories",
-            "version": "dev-master",
+            "version": "dev-latest",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Roave/SecurityAdvisories.git",
-                "reference": "8adda49005b08b79bd4e87bd9000950782138a9b"
+                "reference": "b9421ed9de7b2a5f54f637a064dcd31922a82405"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/8adda49005b08b79bd4e87bd9000950782138a9b",
-                "reference": "8adda49005b08b79bd4e87bd9000950782138a9b",
+                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/b9421ed9de7b2a5f54f637a064dcd31922a82405",
+                "reference": "b9421ed9de7b2a5f54f637a064dcd31922a82405",
                 "shasum": ""
             },
             "conflict": {
@@ -334,7 +334,7 @@
                 "socialiteproviders/steam": "<1.1",
                 "spoonity/tcpdf": "<6.2.22",
                 "squizlabs/php_codesniffer": ">=1,<2.8.1|>=3,<3.0.1",
-                "ssddanbrown/bookstack": "<21.11.2",
+                "ssddanbrown/bookstack": "<21.11.3",
                 "stormpath/sdk": ">=0,<9.9.99",
                 "studio-42/elfinder": "<2.1.59",
                 "subrion/cms": "<=4.2.1",
@@ -454,6 +454,7 @@
                 "zfr/zfr-oauth2-server-module": "<0.1.2",
                 "zoujingli/thinkadmin": "<6.0.22"
             },
+            "default-branch": true,
             "type": "metapackage",
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -486,7 +487,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-12-16T19:12:31+00:00"
+            "time": "2021-12-16T20:16:03+00:00"
         }
     ],
     "aliases": [],
@@ -498,7 +499,7 @@
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
-        "php": ">7.2.0"
+        "php": ">=8.1"
     },
     "platform-dev": [],
     "plugin-api-version": "2.1.0"

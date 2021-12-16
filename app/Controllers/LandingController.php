@@ -1,6 +1,6 @@
 <?php
 
-namespace MyCompany\MyApp\Controllers;
+namespace ObsidianMoon\Framework\Controllers;
 
 use ObsidianMoon\Engine\Abstracts\AbstractController;
 
