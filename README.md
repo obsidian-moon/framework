@@ -18,7 +18,7 @@ Once installed you can change the namespace of your application's files by enter
 {
   "autoload": {
     "psr-4": {
-      "MyCompanyNamespace\\MyApplication\\": "src/"
+      "ObsidianMoon\\Framework\\": "app/"
     }
   }
 }

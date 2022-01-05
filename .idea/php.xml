@@ -12,16 +12,18 @@
   </component>
   <component name="PhpIncludePathManager">
     <include_path>
-      <path value="I:/Libraries/php-8.1.0-nts-Win32-vs16-x64" />
-      <path value="$PROJECT_DIR$/vendor/dark-prospect-games/obsidian-moon-engine" />
+      <path value="I:/Libraries/php-8.1.1-nts-Win32-vs16-x64" />
       <path value="$PROJECT_DIR$/vendor/composer" />
-      <path value="$PROJECT_DIR$/vendor/phpoption/phpoption" />
-      <path value="$PROJECT_DIR$/vendor/vlucas/phpdotenv" />
-      <path value="$PROJECT_DIR$/vendor/symfony/deprecation-contracts" />
-      <path value="$PROJECT_DIR$/vendor/symfony/http-foundation" />
       <path value="$PROJECT_DIR$/vendor/symfony/polyfill-ctype" />
+      <path value="$PROJECT_DIR$/vendor/phpoption/phpoption" />
+      <path value="$PROJECT_DIR$/vendor/symfony/http-foundation" />
+      <path value="$PROJECT_DIR$/vendor/dark-prospect-games/obsidian-moon-engine" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php80" />
       <path value="$PROJECT_DIR$/vendor/symfony/polyfill-mbstring" />
       <path value="$PROJECT_DIR$/vendor/symfony/routing" />
+      <path value="$PROJECT_DIR$/vendor/graham-campbell/result-type" />
+      <path value="$PROJECT_DIR$/vendor/vlucas/phpdotenv" />
+      <path value="$PROJECT_DIR$/vendor/symfony/deprecation-contracts" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="8.1" />
@@ -36,7 +38,6 @@
       <extension name="ast" enabled="true" />
       <extension name="blackfire" enabled="true" />
       <extension name="com_dotnet" enabled="true" />
-      <extension name="couchbase_v3" enabled="true" />
       <extension name="crypto" enabled="true" />
       <extension name="ds" enabled="true" />
       <extension name="event" enabled="true" />
@@ -70,5 +71,10 @@
       <extension name="zookeeper" enabled="true" />
       <extension name="zstd" enabled="true" />
     </extensions>
+  </component>
+  <component name="PhpUnit">
+    <phpunit_settings>
+      <PhpUnitSettings custom_loader_path="$PROJECT_DIR$/vendor/autoload.php" />
+    </phpunit_settings>
   </component>
 </project>
