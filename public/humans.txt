@@ -1,0 +1,15 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Alfonso Martinez  -- Lead Developer -- @TheMysticSith
+
+# THANKS
+
+    Rodney Cheney aka Advocaite
+
+# TECHNOLOGY COLOPHON
+
+    CSS3, HTML5
+    Apache Server Configs, Modernizr, Normalize.css, React.js

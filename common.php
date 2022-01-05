@@ -10,37 +10,49 @@
  *
  * PHP version 7
  *
- * @category  ObsidianMoonEngine
+ * @category  Framework
  * @package   DarkProspectGames\ObsidianMoonEngine
- * @author    Alfonso E Martinez, III <admin@darkprospect.net>
- * @copyright 2011-2018 Dark Prospect Games, LLC
- * @license   MIT https://darkprospect.net/MIT-License.txt
- * @link      https://github.com/dark-prospect-games/obsidian-moon-engine/
- *
- * @global Core   $core
- * @global Logger $logger
  */
 require __DIR__ . '/config/environment.php';
 session_start();
-require dirname(__DIR__) . '/vendor/autoload.php';
+require __DIR__ . '/vendor/autoload.php';
 
-use \DarkProspectGames\ObsidianMoonEngine\Core;
-use \DarkProspectGames\ObsidianMoonEngine\Modules\Input as CoreInput;
-use \Monolog\Handler\StreamHandler;
-use \Monolog\Logger;
+use Dotenv\Dotenv;
+use ObsidianMoon\Engine\Exceptions\FileNotFoundException;
+use ObsidianMoon\Engine\Handlers\ControllerHandler;
+use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\Routing\Exception\MethodNotAllowedException;
+use Symfony\Component\Routing\Exception\ResourceNotFoundException;
+use Symfony\Component\Routing\Matcher\UrlMatcher;
+use Symfony\Component\Routing\RequestContext;
 
+
+# Load up the .env file
+$dotenv = Dotenv::createUnsafeImmutable(__DIR__);
+$dotenv->load();
+
+# Set the root directory
+const APP_ROOT = __DIR__;
+const VIEWS_ROOT = __DIR__ . '/src/views';
+const PUBLIC_ROOT = __DIR__ . '/public';
+
+$request = Request::createFromGlobals();
+
+$routes = include APP_ROOT . '/config/routes.php';
+
+$context = new RequestContext();
+$context->fromRequest($request);
+$matcher = new UrlMatcher($routes, $context);
+
+/** Handle all the routes through the Controller Handler once we found out which one is being used. */
 try {
-    $core = new Core(
-        [
-            'modules' => [
-                'input' => new CoreInput()
-            ]
-        ]
-    );
-    $logger = new Logger('App');
-    $logger->pushHandler(
-        new StreamHandler($core->config('root') . '/logs/errors.log', Logger::DEBUG)
-    );
-} catch (Exception $e) {
-    echo 'An error occurred: ' . $e->getMessage();
+    $controller = new ControllerHandler($matcher->match($request->getPathInfo()));
+    $response = $controller->render();
+} catch (FileNotFoundException|ResourceNotFoundException|MethodNotAllowedException $exception) {
+    $response = new Response('Not Found', 404);
+} catch (Exception $exception) {
+    $response = new Response('An error occurred', 500);
 }
+
+$response->send();

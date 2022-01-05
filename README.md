@@ -8,7 +8,7 @@ Since Obsidian Moon Engine uses [Composer](http://getcomposer.org) you will need
 code with it. Once you have installed Composer you will then be able to install it by running the following command:
 
 ```bash
-composer create-project dark-prospect-games/obsidian-moon-framework
+composer create-project obsidian-moon-development/obsidian-moon-framework
 ```
 
 Once installed you can change the namespace of your application's files by entering the following into the
@@ -18,7 +18,7 @@ Once installed you can change the namespace of your application's files by enter
 {
   "autoload": {
     "psr-4": {
-      "MyCompanyNamespace\\MyApplication\\": "src/"
+      "ObsidianMoon\\Framework\\": "app/"
     }
   }
 }
