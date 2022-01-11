@@ -20,6 +20,7 @@ require __DIR__ . '/vendor/autoload.php';
 use Dotenv\Dotenv;
 use ObsidianMoon\Engine\Exceptions\FileNotFoundException;
 use ObsidianMoon\Engine\Handlers\ControllerHandler;
+use ObsidianMoon\Engine\Handlers\ExceptionHandler;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Exception\MethodNotAllowedException;
@@ -27,6 +28,7 @@ use Symfony\Component\Routing\Exception\ResourceNotFoundException;
 use Symfony\Component\Routing\Matcher\UrlMatcher;
 use Symfony\Component\Routing\RequestContext;
 
+$exceptions = new ExceptionHandler(admin: false);
 
 # Load up the .env file
 $dotenv = Dotenv::createUnsafeImmutable(__DIR__);
@@ -50,9 +52,9 @@ try {
     $controller = new ControllerHandler($matcher->match($request->getPathInfo()));
     $response = $controller->render();
 } catch (FileNotFoundException|ResourceNotFoundException|MethodNotAllowedException $exception) {
-    $response = new Response('Not Found', 404);
+    $response = new Response($exceptions->handle($exception, 'Not Found'), 404);
 } catch (Exception $exception) {
-    $response = new Response('An error occurred', 500);
+    $response = new Response($exceptions->handle($exception, 'An error occurred'), 500);
 }
 
 $response->send();

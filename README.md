@@ -2,7 +2,7 @@ Obsidian Moon Framework
 =======================
 
 <a name="installing"></a>
-## Installing Obsidian Moon Engine
+## Installing Obsidian Moon Framework
 
 Since Obsidian Moon Engine uses [Composer](http://getcomposer.org) you will need to install it before you can run the
 code with it. Once you have installed Composer you will then be able to install it by running the following command:
@@ -74,10 +74,5 @@ RewriteRule ^(.*)$ index.php?/$1 [L]
 <a name="base-methods"></a>
 ## Overview of the Base Methods
 
-Within the Obsidian Moon Engine there are a few functions that you will need to keep in mind when using using the
-framework. The first of all is that the system uses a path routing system that you will need to declare in the
-configurations. The files used to manage the flow of application's called Controls. In order to provide an ease of use
-upon installation, Obsidian Moon Engine comes with a default routing module that you use or extend and/or overwrite.
-
-Within the Control you will be able to load modules (`Core::module()`) and views (`Core::view()`) as well as handle any
-errors that occur during the process of your application's life cycle.
+The framework uses Obsidian Moon Engine, and you can find more details regarding the methods in it's 
+[README.md](/obsidian-moon/engine/blob/master/README.md#implementation)
