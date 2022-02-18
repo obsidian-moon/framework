@@ -74,5 +74,5 @@ RewriteRule ^(.*)$ index.php?/$1 [L]
 <a name="base-methods"></a>
 ## Overview of the Base Methods
 
-The framework uses Obsidian Moon Engine, and you can find more details regarding the methods in it's 
-[README.md](/obsidian-moon/engine/blob/master/README.md#implementation)
+The framework uses Obsidian Moon Engine, and you can find more details regarding the methods in its 
+[README.md](https://github.com/obsidian-moon/engine/blob/master/README.md#implementation)
