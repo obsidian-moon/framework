@@ -9,7 +9,7 @@
  * Obsidian Moon Engine by Dark Prospect Games
  * An Open Source, Lightweight and 100% Modular Framework in PHP
  *
- * PHP version 7
+ * PHP version 8
  *
  * @category  Framework
  * @package   ObsidianMoon\Framework

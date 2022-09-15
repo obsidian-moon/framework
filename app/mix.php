@@ -29,21 +29,20 @@ if (!function_exists('mix')) {
                     json_decode(
                         json: file_get_contents($manifestPath),
                         associative: true,
-                        depth: 512,
                         flags: JSON_THROW_ON_ERROR
                     );
-            } catch (JsonException $e) {
+            } catch (JsonException) {
                 throw new RuntimeException('Was unable to process the manifest file, please try again!');
             }
         }
 
         if (!str_starts_with($path, '/')) {
-            $path = "/{$path}";
+            $path = "/$path";
         }
 
         if (!array_key_exists($path, $manifest)) {
             throw new RuntimeException(
-                "Unknown Laravel Mix file path: {$path}. Please check your requested " .
+                "Unknown Laravel Mix file path: $path. Please check your requested " .
                 'webpack.mix.js output path, and try again.'
             );
         }
