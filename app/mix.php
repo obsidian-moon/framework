@@ -2,7 +2,7 @@
 /**
  * Handle the Laravel Mix manifest so that we can use cache breaking.
  *
- * Inspired by Laravel's (https://laravel.com) `mix()` helper function.
+ * Inspired by the Laravel (https://laravel.com) `mix()` helper function.
  *
  * Examples:
  *

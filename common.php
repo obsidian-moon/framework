@@ -5,7 +5,7 @@
  * This file is where you will start the Core object and pass it to the rest of the
  * files in your application. This location is required by framework.
  *
- * Obsidian Moon Engine by Dark Prospect Games
+ * Obsidian Moon Engine by Obsidian Moon Development
  * An Open Source, Lightweight and 100% Modular Framework in PHP
  *
  * PHP version 8

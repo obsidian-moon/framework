@@ -1,3 +1,15 @@
+<a name="2.1.0"></a>
+# 2.1.0 ()
+
+<a name="2.1.0.features"></a>
+## Features
+
+* Added `eslint-plugin-react-hooks` plugin for ESLint.
+* Added `stylelint` and `stylelint-config-standard-scss` Standard Code Style for SCSS.
+* Added `.babelrc`, `.eslintrc`, and `.stylelintrc` files for ESLint and StyleLint
+* Enabled ESLint and StyleLint by default.
+* Corrected some typos and updated file headers in PHPDoc blocks.
+
 <a name="2.0.1"></a>
 # 2.0.1 (2022-01-11)
 

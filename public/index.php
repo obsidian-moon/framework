@@ -6,7 +6,7 @@
  * It is a work in progress, but it works.
  * I will work to get it running with Routing soon.
  *
- * Obsidian Moon Engine by Dark Prospect Games
+ * Obsidian Moon Engine by Obsidian Moon Development
  * An Open Source, Lightweight and 100% Modular Framework in PHP
  *
  * PHP version 8
