@@ -11,7 +11,7 @@
  * PHP version 8
  *
  * @category  Framework
- * @package   DarkProspectGames\ObsidianMoonEngine
+ * @package   ObsidianMoon\Framework
  */
 require __DIR__ . '/config/environment.php';
 session_start();
@@ -28,21 +28,25 @@ use Symfony\Component\Routing\Exception\ResourceNotFoundException;
 use Symfony\Component\Routing\Matcher\UrlMatcher;
 use Symfony\Component\Routing\RequestContext;
 
+/** Initialize the Exception Handler and determine if verbose exception messages are used. */
 $exceptions = new ExceptionHandler(admin: false);
 
-# Load up the .env file
+/** Load up the configs from the `.env` file. */
 $dotenv = Dotenv::createUnsafeImmutable(__DIR__);
 $dotenv->load();
 
-# Set the root directory
+/** Set the root directories for the application. */
 const APP_ROOT = __DIR__;
 const VIEWS_ROOT = __DIR__ . '/src/views';
 const PUBLIC_ROOT = __DIR__ . '/public';
 
+/** Get all globals, e.g. $_POST, $_GET, $_SESSION, etc. */
 $request = Request::createFromGlobals();
 
+/** Get the routes for the application. */
 $routes = include APP_ROOT . '/config/routes.php';
 
+/** Get the routing information that matches current URL. */
 $context = new RequestContext();
 $context->fromRequest($request);
 $matcher = new UrlMatcher($routes, $context);

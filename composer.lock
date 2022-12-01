@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "22c08065bd06c792ed77ff5b81f1853b",
+    "content-hash": "fe4e4625d6472c30d56f66824fe6b85d",
     "packages": [
         {
             "name": "graham-campbell/result-type",
@@ -70,23 +70,23 @@
         },
         {
             "name": "obsidian-moon/engine",
-            "version": "2.0.3",
+            "version": "2.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/obsidian-moon/engine.git",
-                "reference": "5fdf468a925e0e4968da1f9e87c0877a9e3d5f47"
+                "reference": "6b50ca7e03e9b05ef1911b57c70ce56a46bb65bf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/obsidian-moon/engine/zipball/5fdf468a925e0e4968da1f9e87c0877a9e3d5f47",
-                "reference": "5fdf468a925e0e4968da1f9e87c0877a9e3d5f47",
+                "url": "https://api.github.com/repos/obsidian-moon/engine/zipball/6b50ca7e03e9b05ef1911b57c70ce56a46bb65bf",
+                "reference": "6b50ca7e03e9b05ef1911b57c70ce56a46bb65bf",
                 "shasum": ""
             },
             "require": {
                 "php": ">=8.1",
-                "symfony/http-foundation": "^6.0",
-                "symfony/routing": "^6.0",
-                "vlucas/phpdotenv": "^5.4"
+                "symfony/http-foundation": "^6.2",
+                "symfony/routing": "^6.2",
+                "vlucas/phpdotenv": "^5.5"
             },
             "require-dev": {
                 "roave/security-advisories": "dev-latest"
@@ -118,7 +118,7 @@
                 "issues": "https://github.com/obsidian-moon/engine/issues",
                 "source": "https://github.com/obsidian-moon/engine"
             },
-            "time": "2022-02-28T21:31:05+00:00"
+            "time": "2022-12-01T17:52:38+00:00"
         },
         {
             "name": "phpoption/phpoption",

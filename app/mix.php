@@ -20,7 +20,7 @@ if (!function_exists('mix')) {
             if (!is_file($manifestPath)) {
                 throw new RuntimeException(
                     'The Laravel Mix manifest file does not exist. '
-                    . 'Please run "npm run webpack" and try again.'
+                    . 'Please run "npm run production" or "npm run development" and try again.'
                 );
             }
 
