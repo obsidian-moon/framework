@@ -1,3 +1,19 @@
+<a name="2.1.0"></a>
+# 2.1.0 (2022-12-01)
+
+<a name="2.1.0.features"></a>
+## Features
+
+* Upgraded requirement for Obsidian Moon Engine to version `2.1`
+* Added `browserconfig.xml` and tiles for `Windows UI` from [HTML5 Boilerplate 8.0](https://html5boilerplate.com/). 
+* Added `eslint-plugin-react-hooks` plugin for ESLint.
+* Added `stylelint` and `stylelint-config-standard-scss` Standard Code Style for SCSS.
+* Added `.babelrc`, `.eslintrc`, and `.stylelintrc` files for ESLint and StyleLint.
+* Enabled `ESLint` and `StyleLint` by default in PhpStorm.
+* Corrected some typos and updated file headers in PHPDoc blocks.
+* Added more documentation to the files, explaining what is happening.
+* Added more system files to `.gitignore` file.
+
 <a name="2.0.1"></a>
 # 2.0.1 (2022-01-11)
 

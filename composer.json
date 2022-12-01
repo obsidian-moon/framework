@@ -1,7 +1,7 @@
 {
     "name": "obsidian-moon/framework",
     "description": "An Open Source, Lightweight and 100% Modular Framework in PHP",
-    "version": "2.0.1",
+    "version": "2.1.0",
     "type": "project",
     "keywords": [
         "framework"
@@ -17,7 +17,7 @@
     ],
     "require": {
         "php": ">=8.1",
-        "obsidian-moon/engine": "^2.0"
+        "obsidian-moon/engine": "^2.1"
     },
     "require-dev": {
         "roave/security-advisories": "dev-latest"
